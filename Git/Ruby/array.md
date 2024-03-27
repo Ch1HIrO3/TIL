@@ -98,3 +98,20 @@ end
 puts min
 puts max
 ```
+***
+[数列の A 番目から B 番目までの和 ](https://paiza.jp/works/mondai/loop_problems/loop_problems__seq_partsum)
+
+```Ruby
+N, A, B = gets.chomp.split.map(&:to_i)
+array = gets.chomp.split.map(&:to_i)
+
+# 数列の A 番目から B 番目までの和
+sum = array[A - 1...B].sum
+puts sum
+```
+*配列内の和を出力する際に「.sumメソッド」を使用する。
+```Ruby
+array=[3,4,5]
+puts array.sum
+# 出力結果「12」
+```
