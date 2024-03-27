@@ -83,3 +83,18 @@ Q.times do
 end
  ```
 * caseによる条件分岐
+***
+## 配列内の最小値と最大値を出力
+```Ruby
+array=[3,6,1,9,4,5]
+
+min=array[0]
+max=array[0]
+
+array.each do|num|
+  min=num if num<min
+  max=num if num>max
+end
+puts min
+puts max
+```
