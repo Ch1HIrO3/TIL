@@ -1,6 +1,6 @@
 ### [ある数字までの出力 1 ](https://paiza.jp/works/mondai/loop_problems/loop_problems__print_num_step1)
 
-* 1.upto(10)  
+## 1.upto(10)  
 1から10までの整数を順番に取り出して、それぞれを変数numに代入しながら繰り返し処理を行う構文  
 * each処理に繰り返し範囲を指定する方が一般的。
 ```Ruby
@@ -23,7 +23,7 @@ end
 ***
 ### [数字の受け取り 1 ](https://paiza.jp/works/mondai/loop_problems/loop_problems__input_num_step1)
 
-* each  
+## each  
 配列の要素を順番に取り出して、それぞれを変数numに代入しながら繰り返し処理を行う構文
 ```Ruby
 array=gets.chomp.split.map(&:to_i)
@@ -78,7 +78,7 @@ end
 ***
 ### [ある数をある回数表示 2 ](https://paiza.jp/works/mondai/loop_problems/loop_problems__rep_num_step2)
 
-* times  
+## times  
 指定された回数分、繰り返し処理を行う構文
 ```Ruby
 X,Y=gets.chomp.split.map(&:to_i)
@@ -98,6 +98,27 @@ end
 # 3
 # 3
 # 3
+```
+```Ruby
+# 回数Nが入力される
+N = gets.to_i
+
+# N回数、数値が入力される
+array = N.times.map { gets.to_i }
+
+# 合計を算出する
+puts array.sum
+
+# 入力例
+# 5
+# 1
+# 2
+# 3
+# 4
+# 5
+
+# 出力結果
+# 6
 ```
 ***
 ### [九九の表示 1 ](https://paiza.jp/works/mondai/loop_problems/loop_problems__kuku_step1)
