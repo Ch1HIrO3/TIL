@@ -1,7 +1,8 @@
 ### [ある数字までの出力 1 ](https://paiza.jp/works/mondai/loop_problems/loop_problems__print_num_step1)
 
 * 1.upto(10)  
-1から10までの整数を順番に取り出して、それぞれを変数numに代入しながら繰り返し処理を行う構文
+1から10までの整数を順番に取り出して、それぞれを変数numに代入しながら繰り返し処理を行う構文  
+* each処理に繰り返し範囲を指定する方が一般的。
 ```Ruby
 1.upto(10) do|num|
   puts num
@@ -56,6 +57,24 @@ end
   puts alphabet
 end
 ```
+## [FizzBuzz](https://paiza.jp/works/mondai/loop_problems/loop_problems__fizzbuzz)
+* 範囲演算子 (1..100) を使用して繰り返し範囲を指定
+```Ruby
+(1..100).each do |i|
+  case
+  when i % 15 == 0
+    puts "FizzBuzz"
+  when i % 3 == 0
+    puts "Fizz"
+  when i % 5 == 0
+    puts "Buzz"
+  else
+    puts i
+  end
+end
+```
+
+
 ***
 ### [ある数をある回数表示 2 ](https://paiza.jp/works/mondai/loop_problems/loop_problems__rep_num_step2)
 
@@ -81,3 +100,23 @@ end
 # 3
 ```
 ***
+### [九九の表示 1 ](https://paiza.jp/works/mondai/loop_problems/loop_problems__kuku_step1)
+
+* while  
+指定された条件が真である間、繰り返し文を実行します。  
+while の後に続く条件式が評価され、条件が真であれば、ループの本体が実行されます。  
+条件が偽になるまでループが続きます。
+```Ruby
+array=[]
+num=1
+
+while num<=9
+  array<<num*8
+  num+=1
+end
+
+puts array.join(" ")
+
+# 出力結果
+# 8 16 24 32 40 48 56 64 72
+```
