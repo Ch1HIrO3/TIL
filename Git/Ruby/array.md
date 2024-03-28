@@ -19,6 +19,16 @@ int
 3
 ```
 ***
+### [数列の反転](https://paiza.jp/works/mondai/loop_problems/loop_problems__seq_reverse)
+* 数列の要素を逆順に出力
+* .reverseメソッドを使用
+```Ruby
+turn=gets.to_i
+array=gets.chomp.split.map(&:to_i).to_a
+
+puts array.reverse
+```
+***
 ### [動的配列](https://paiza.jp/works/mondai/data_structure/data_structure__array_boss)
 
 ```Ruby
