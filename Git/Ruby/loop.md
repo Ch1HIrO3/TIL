@@ -123,7 +123,7 @@ puts array.sum
 ***
 ### [九九の表示 1 ](https://paiza.jp/works/mondai/loop_problems/loop_problems__kuku_step1)
 
-* while  
+## while  
 指定された条件が真である間、繰り返し文を実行します。  
 while の後に続く条件式が評価され、条件が真であれば、ループの本体が実行されます。  
 条件が偽になるまでループが続きます。
