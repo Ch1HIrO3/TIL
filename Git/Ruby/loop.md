@@ -141,3 +141,17 @@ puts array.join(" ")
 # 出力結果
 # 8 16 24 32 40 48 56 64 72
 ```
+### [けた数の測定2 で何回割れる？](https://paiza.jp/works/mondai/loop_problems2/loop_problems2__div_two)
+整数 N が与えられます。  
+N が何回 2 で割れるかを求め、出力してください。
+```Ruby
+num=gets.to_i
+count=0
+
+while num%2==0
+  count+=1
+  num/=2
+end
+
+puts count
+```
