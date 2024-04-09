@@ -1,5 +1,5 @@
 ### 小数点
-　
+
 #### .floor メソッド
 与えられた数値を小数点以下を切り捨てた整数に変換するメソッド。
 
@@ -8,6 +8,19 @@ num=1.23456
 puts num.floor
 # => 1
 ```
+### [毎日増加するお金](https://paiza.jp/works/mondai/loop_problems2/loop_problems2__inc_percent)
+```Ruby
+A,B=gets.chomp.split.map(&:to_i)
+
+count=0
+while A<=B
+  X=(A*0.1).floor
+  A+=X
+  count+=1
+end
+puts count
+```
+
 ***  
 
 %.3f は、小数点以下3桁までの精度を持つ浮動小数点数を表す。  
