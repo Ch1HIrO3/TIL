@@ -155,3 +155,17 @@ end
 
 puts count
 ```
+***
+
+### [N が M ずつ増えたときにいつ K を越える？](https://paiza.jp/works/mondai/loop_problems2/loop_problems2__inc_m)
+```Ruby
+N,M,K=gets.chomp.split.map(&:to_i)
+# N が M ずつ増えるとき、何回目に K を越えるか出力してください。
+
+count=0
+while N<=K
+  N+=M
+  count+=1
+end
+puts count
+```
