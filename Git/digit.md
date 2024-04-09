@@ -33,3 +33,22 @@ puts N.digits
 # 2
 # 1
 ```
+
+### [階乗の末尾に 0 はいくつ付く？](https://paiza.jp/works/mondai/loop_problems2/loop_problems2__factorial_zero)
+```Ruby
+N=gets.to_i
+# N!=count
+count=1
+(1..N).each do|num|
+  count*=num
+end
+
+sum=0
+while count%10==0
+  count/=10
+  sum+=1
+end
+
+# 10で割り切れる回数＝末尾の0の個数
+puts sum
+```
