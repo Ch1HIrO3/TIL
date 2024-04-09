@@ -23,3 +23,10 @@ puts "%.3f" % num
 ```Ruby
 num = gets.to_f
 ```
+***
+小数点以下を切り上げる  
+```Ruby
+num = 1.345
+puts num.ceil
+# 出力結果　2
+```
