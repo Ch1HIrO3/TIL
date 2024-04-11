@@ -18,6 +18,13 @@ int
 2
 3
 ```
+#### [要素数の出力](https://paiza.jp/works/mondai/array_primer/array_primer__1dmatrix_output_step1)
+```Ruby
+array=[5,1,3,4,5,12,6,8,1,3]
+puts array.length
+# 出力結果　10
+```
+
 ***
 ### [数列の反転](https://paiza.jp/works/mondai/loop_problems/loop_problems__seq_reverse)
 * 数列の要素を逆順に出力
