@@ -169,3 +169,38 @@ while N<=K
 end
 puts count
 ```
+***
+
+### [加算された数列の最大値](https://paiza.jp/works/mondai/loop_problems2/loop_problems2__add_maxseq)
+
+```Ruby
+N=gets.to_i
+array=gets.chomp.split.map(&:to_i)
+count=1
+sum=[]
+
+array.each do|num|
+  num+=count
+  count+=1
+  sum<<num
+end
+
+max=sum[0]
+sum.each do|num|
+  if num>max
+    max=num
+  end
+end
+
+puts max
+```
+
+AIリファクタリング
+```Ruby
+N = gets.to_i
+array = gets.chomp.split.map(&:to_i)
+max = array.map.with_index { |num, index| num + index + 1 }.max
+puts max
+```
+配列の各要素にインデックスを加え、その中から最大値を求めるために map.with_index を使用。  
+その最大値を出力。
