@@ -70,6 +70,17 @@ count=0
 end
 puts count
 ```
+[約数の列挙](https://paiza.jp/works/mondai/loop_problems2/loop_problems2__divsor_print)
+```Ruby
+N=gets.to_i
+count=0
+
+(1..N).each do|num|
+  if N%num==0
+    puts num
+  end
+end
+```
 ## [FizzBuzz](https://paiza.jp/works/mondai/loop_problems/loop_problems__fizzbuzz)
 * 範囲演算子 (1..100) を使用して繰り返し範囲を指定
 ```Ruby
