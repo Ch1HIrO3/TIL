@@ -73,7 +73,6 @@ puts count
 [約数の列挙](https://paiza.jp/works/mondai/loop_problems2/loop_problems2__divsor_print)
 ```Ruby
 N=gets.to_i
-count=0
 
 (1..N).each do|num|
   if N%num==0
