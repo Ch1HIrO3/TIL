@@ -8,17 +8,15 @@ puts array.join(" ")
 
 # 要素ごとに改行して出力
 puts array.join("\n")
-```
 
-#### 出力結果
+# 出力結果
+# int 1 2 3
+# int
+# 1
+# 2
+# 3
 ```
-int 1 2 3
-int
-1
-2
-3
-```
-#### [要素数の出力](https://paiza.jp/works/mondai/array_primer/array_primer__1dmatrix_output_step1)
+### [要素数の出力](https://paiza.jp/works/mondai/array_primer/array_primer__1dmatrix_output_step1)
 ```Ruby
 array=[5,1,3,4,5,12,6,8,1,3]
 puts array.length
@@ -76,9 +74,9 @@ end
 1 2 3 10 12
 1 2 3 10
 ```
-
-
-## AIリファクタリング
+### AIリファクタリング
+* caseによる条件分岐
+* *params
  ```Ruby
 N, Q = gets.chomp.split.map(&:to_i)
 A = gets.chomp.split.map(&:to_i)
@@ -99,7 +97,6 @@ Q.times do
   end
 end
  ```
-* caseによる条件分岐
 ***
 ## 配列内の最小値と最大値を出力
 ```Ruby
@@ -116,7 +113,7 @@ puts min
 puts max
 ```
 ***
-[数列の A 番目から B 番目までの和 ](https://paiza.jp/works/mondai/loop_problems/loop_problems__seq_partsum)
+### [数列の A 番目から B 番目までの和 ](https://paiza.jp/works/mondai/loop_problems/loop_problems__seq_partsum)
 
 ```Ruby
 N, A, B = gets.chomp.split.map(&:to_i)
@@ -131,4 +128,48 @@ puts sum
 array=[3,4,5]
 puts array.sum
 # 出力結果「12」
+```
+### [配列の書き換え](https://paiza.jp/works/mondai/array_primer/array_primer__elm_rewrite)
+```Ruby
+A,B,N=gets.chomp.split.map(&:to_i)
+sequence=gets.chomp.split.map(&:to_i)
+
+sequence.each do|num|
+  if num==A
+    puts B
+  else
+    puts num
+  end
+end
+```
+### [配列の連結](https://paiza.jp/works/mondai/array_primer/array_primer__array_join)
+```Ruby
+N,M=gets.chomp.split.map(&:to_i)
+A=gets.chomp.split.map(&:to_i)
+B=gets.chomp.split.map(&:to_i)
+A.concat(B)
+puts A
+
+
+# concat メソッドは、配列に別の配列を連結するために使用される。
+# このメソッドは、引数として与えられた配列の要素を呼び出し元の配列に追加する。
+array = ["red", "blue", "green"]
+sequence = [1, 2, 3, 4, 5]
+array.concat(sequence)
+p array
+# 出力結果
+# ["red", "blue", "green", 1, 2, 3, 4, 5]
+```
+### [配列のソート](https://paiza.jp/works/mondai/array_primer/array_primer__array_sort)
+```Ruby
+N=gets.to_i
+sequence=gets.chomp.split.map(&:to_i)
+puts sequence.sort
+
+# 要素を小さい順に並べ替えるには、sort メソッドを使用
+sequence=[3,7,5,2,4,6]
+sequence=sequence.sort
+p sequence
+# 出力結果
+# [2, 3, 4, 5, 6, 7]
 ```
