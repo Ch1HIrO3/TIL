@@ -87,9 +87,31 @@ public class Main {
     double rand = Math.random() * 6 + 1;
 		
     // 生成した数値の小数点以下を切り捨てて、変数numberに定義する。
+    // => int型にキャストする。
     int number = (int)rand;
     
     System.out.println("サイコロの目は"+number+"です");
+	}
+}
+```
+ランダム数値を生成すると同時にint型へキャストする。  
+→ 整数
+```Java
+// 値段を計算する
+public class Main {
+	public static void main(String[] args) {
+		// 単価 ¥100~¥300
+    int price = (int)(Math.random()* 3 + 1 )*100;
+        
+		//  購入数 1~5個
+		int num = (int)(Math.random()* 5 + 1 );
+		
+		//  合計金額
+		int total= price * num;
+		
+		System.out.println("単価："+ price +"円");
+		System.out.println("個数："+ num +"個");
+		System.out.println("合計："+ total +"円");
 	}
 }
 ```
