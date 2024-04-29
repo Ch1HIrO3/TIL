@@ -44,3 +44,25 @@ class Main {
   }
 }
 ```
+***
+### equals
+[単純な条件分岐](https://paiza.jp/works/mondai/d_rank_level_up_problems/d_rank_level_up_problems__conditions_branch_1)  
+文字列の比較→条件分岐
+```Java
+import java.util.*;
+public class Main{
+  public static void main(String[]args){
+    Scanner sc = new Scanner(System.in);
+    String text = sc.next();
+
+// 入力された文字列がpaizaと一致する場合はYESを、一致しない場合はNOを出力
+    if(text.equals("paiza")){
+      System.out.println("YES");
+    }else{
+      System.out.println("NO");
+    }
+
+    sc.close();
+  }
+}
+```
