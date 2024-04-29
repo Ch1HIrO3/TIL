@@ -41,3 +41,36 @@ public class Main {
 }
 // 出力結果 1.234
 ```
+```Java
+class Main {
+  public static void main(String[] args) {
+    
+    // 7を2で割った値を出力してください
+    System.out.println(7/2);
+    // 出力結果 3
+    
+    // 7.0を2.0で割った値を出力してください
+    System.out.println(7.0/2.0);
+    // 出力結果 3.5
+    
+    // 7を2.0で割った値を出力してください
+    System.out.println(7/2.0);
+    // 出力結果 3.5
+  }
+}
+```
+### データ型のキャスト
+```Java
+class Main {
+  public static void main(String[] args) {
+    int number1 = 7;
+    int number2 = 2;
+    System.out.println(number1 / number2);
+    // int型のため、出力結果 3
+    
+    // number1をdouble型にキャストし、number2で割った値を出力
+    System.out.println((double)number1/number2);
+    // 出力結果 3.5
+  }
+}
+```
