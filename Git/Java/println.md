@@ -74,3 +74,22 @@ class Main {
   }
 }
 ```
+***
+### random
+* Math.random()  
+0~1未満の数値をランダムに生成する。
+```Java
+// 数の表示とサイコロ
+public class Main {
+	public static void main(String[] args) {
+
+    // 1~6の数値をランダムに生成する。
+    double rand = Math.random() * 6 + 1;
+		
+    // 生成した数値の小数点以下を切り捨てて、変数numberに定義する。
+    int number = (int)rand;
+    
+    System.out.println("サイコロの目は"+number+"です");
+	}
+}
+```
