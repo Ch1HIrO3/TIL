@@ -29,3 +29,15 @@ public class Main {
     }
 }
 ```
+***
+### 小数点以下を含めるデータ型
+* double
+```Java
+public class Main {
+    public static void main(String[] args) {
+      double number = 1.234;
+      System.out.println(number);
+    }
+}
+// 出力結果 1.234
+```
