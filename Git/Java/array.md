@@ -18,3 +18,46 @@ public class Main{
   }
 }
 ```
+### 繰り返し処理との併用
+* length  
+配列.length = 配列内の要素数
+```Java
+public class Main{
+  public static void main(String[]args){
+
+    int[]sequence = {1,4,7,9};
+
+    // 配列の要素の数だけ繰り返す処理
+    for(int i=0; i<sequence.length; i++){
+      System.out.println(sequence[i]);
+    }
+  }
+}
+
+// 出力結果
+// 1
+// 4
+// 7
+// 9
+```
+* 配列用のfor構文  
+for(データ型 変数名:配列名){  
+  繰り返す処理  
+}
+```Java
+public class Main{
+  public static void main(String[]args){
+    String[]array = {"red","blue","yellow"};
+
+    // for(データ型 変数名:配列名)
+    for(String colour:array){
+      System.out.println(colour);
+    }
+  }
+}
+
+// 出力結果
+// red
+// blue
+// yellow
+```
